@@ -7,9 +7,8 @@ const firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 $(function() {
-  $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
-  });
+  // Initialize tooltips
+  $('[data-toggle="tooltip"]').tooltip();
     
   /* Video player code */
   const $playBtn = $('.play-btn'),
