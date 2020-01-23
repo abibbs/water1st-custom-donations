@@ -1,0 +1,59 @@
+.lb {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  z-index: 8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+}
+
+.lb:after {
+  content: '';
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.lb-wrap {
+  width: 70%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.youtube-content {
+  height: 0;
+  padding-top: 30px;
+  padding-bottom: 54.25%;
+  overflow: hidden;
+  position: relative;
+}
+
+.youtube-content embed, .youtube-content iframe, .youtube-content object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.dn {
+  display: none !important;
+}
+
+.ofh {
+  overflow: hidden !important;
+}
+
+.play-btn {
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .row.top-row {
+    align-items: center;
+  }
+}

@@ -1,0 +1,196 @@
+.share-out {
+  text-align: right !important;
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+.share-img:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .share-out {
+    display: none;
+  }
+}
+
+#index {
+  position: relative;
+}
+
+.kv {
+  width: 100%;
+  height: 95vh;
+  overflow: hidden;
+  text-align: center;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.kv .video {
+  width: 100%;
+  height: 100%;
+}
+
+.kv .video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 980px) {
+  .kv .video {
+    background-image: url(/img/shimmering-water-1x1-mobile.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+}
+
+@media (max-width: 980px) {
+  .kv .video video {
+    display: none;
+  }
+}
+
+.kv h1 {
+  vertical-align: middle;
+  display: inline-block;
+  font-weight: normal;
+}
+
+.kv:after {
+  content: '';
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+}
+
+@media (max-width: 576px) {
+  .kv {
+    height: 75vh;
+  }
+}
+
+.video-inner-bx {
+  margin-top: 10%;
+}
+
+@media (max-width: 576px) {
+  .video-inner-bx {
+    margin-top: 40%;
+  }
+}
+
+.black-board {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: table;
+}
+
+.black-board .black-wrap {
+  vertical-align: middle;
+}
+
+.black-board:after {
+  content: '';
+  width: 0;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.black-board .play-btn {
+  width: 60px;
+  margin: 1em auto 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.black-board .play-btn {
+  transition: all 400ms;
+}
+
+@media (max-width: 1000px) {
+  .black-board .play-btn {
+    width: 4em;
+  }
+}
+
+.black-board .play-btn:before {
+  content: '';
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 400ms;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.video-hl {
+  color: #fff;
+  font-weight: bold !important;
+}
+
+.video-sub {
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 576px) {
+  .video-sub {
+    max-width: 300px;
+  }
+}
+
+.play-btn img {
+  max-width: 100%;
+  display: block;
+}
+
+.go-down {
+  width: 4rem;
+  cursor: pointer;
+  -webkit-animation: goDown 1s infinite alternate linear;
+  animation: goDown 1s infinite alternate linear;
+  z-index: 7;
+  position: absolute;
+  bottom: 1em;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 576px) {
+  .go-down {
+    display: none;
+  }
+}
+
+@keyframes goDown {
+  0% {
+    bottom: 1em;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0.3;
+  }
+}
+
+.go-down img {
+  max-width: 100%;
+  display: block;
+}
+
