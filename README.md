@@ -1,1 +1,1 @@
-# water1st-server-custom-donations
+# water1st-custom-donations
